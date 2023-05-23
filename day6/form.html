@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/reddit-logo-reddit-icon-115628658968pe8utyxjt.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://toppng.com/uploads/preview/reddit-logo-reddit-icon-115628658968pe8utyxjt.png">
+    <link rel="stylesheet" href="../day2/styles.css">
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="#">
+        <!-- within label tag the nfor atrribute should be made the same as id attribut in input it makes so that the if you click the string of label you'll be redirected to the actual input place -->
+
+
+        <label for="name">Name</label>
+        <input type="text" id="name"><br><br>
+        <label for="">Contact</label>
+        <input type="number"><br><br>
+
+        <label for="psw">password</label>
+        <input type="password" id="psw"><br><br><br><br>
+
+
+        <!-- description has textarea rather than input tag, here the textarea tag gives a large box for us to write -->
+        <label for="Description" >
+            Description
+        </label>
+        <textarea name="" id="Description" cols="30" rows="10" placeholder=""></textarea><br><br><br>
+
+        <!-- the radio bottom is a form of input that gives us a place to tick -->
+        <label for="Gender">Gender</label>
+        <input name="Gender" type="radio" id="male">
+        <label for="male">male</label>
+        <input name="Gender" type="radio" id="female">
+        <label  for="female">female</label>
+        <input type="radio" name="Gender" id="Others">
+        <label for="Others">Others</label>
+        <br><br><br>
+        <!-- here all the input tags are given same name atrribut so that the database only registers one input -->
+
+        <!-- "disabled" attribute disables the input -->
+
+        <h2>Subjects</h2>
+
+
+        <label for="math">Mathematics</label>
+        <input type="checkbox" name="Subjects" id="maths" value="Mathematics"><br><br>
+
+        <label for="eng">English</label>
+        <input type="checkbox" name="Subjects" id="eng" value="English"><br><br>
+
+        <label for="Social">Social</label>
+        <input type="checkbox" name="Subjects" id="Social" value="Social"><br><br>
+
+        <label for="address">Please put your address</label>
+        <input type="text" name="address" id="address"  placeholder="Address">
+
+        <!-- place holder attribute takes a string as a placeholder -->
+
+
+        <br><br>
+        <label for="class">class</label>
+        <input type="text" name="" id="class" value="12" readonly><br><br>
+        <!-- the read only attribute makes the text unchangeable -->
+
+        <input type="submit" value="submit"><br><br>
+    </form>
+</body>
+</html>
