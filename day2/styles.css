@@ -4,3 +4,9 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
 }
+.submit,
+.reset{
+    background-color: aqua;
+    font-size: large;
+    border-radius: 5px;
+}

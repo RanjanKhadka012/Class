@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2.2</title>
+    <link rel="stylesheet" href="../day2/styles.css">
+</head>
+<body>
+    <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D" autocomplete="off">
+        <fieldset>
+            <legend>Student form</legend><br> 
+            <!-- Name -->
+            <label for="name" >Name</label>
+            <!-- here required attribute throws error if the field is empty -->
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- surname -->
+            <label for="sur_name">Surname</label>
+            <input type="text" name="sur_name" id="sur_name"><br><br>
+
+            <!-- Roll number -->
+            <label for="roll">Roll number</label>
+            <input type="number" name="roll" id="roll"><br><br>
+
+            <!-- for password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password"><br><br>
+
+            <!-- for gender -->
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female"><br><br>
+
+            <!-- For Subject -->
+            <label for="sub">Subject</label><br><br>
+            <label for="math">Mathematics</label>
+            <input type="checkbox" name="sub1" id="math"><br>
+
+            <label for="physics">Physics</label>
+            <input type="checkbox" name="sub2" id="physics"><br>
+
+            <label for="Chem">Chemistry</label>
+            <input type="checkbox" name="sub3" id="Chem"><br><br>
+
+            <!-- for options with dropdown menu -->
+            <label for="muni">Municipality: </label>
+            <!-- select tag gives dropdown option -->
+            <select name="Municipality" id="muni">
+                <!-- options tag to add dropdown options -->
+                <option value="">Select</option>
+                <!-- here value is kept null since select is only a placeholder -->
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Kirtipur">Kirtipur</option>
+                <option value="Sifal">Sifal</option>
+            </select>
+            <br><br>
+
+            <!-- for date of birth type options -->
+            <label for="dob">Date of birth</label>
+            <!-- input type date gives the usual date calender format -->
+            <input type="date" id="dob"><br><br>
+
+
+            <!-- to upload files  -->
+            <label for="file">Upload file</label>
+            <input type="file">
+            <!-- <input type="file" multiple> -->
+            <!-- here multiple attribute makes it possible to upload multiple files -->
+
+           <br><br><input type="submit" placeholder="submit" class="submit"><br><br>
+           <input type="reset" value="Reset" class="reset">
+
+        </fieldset>
+    </form>
+</body>
+</html>
