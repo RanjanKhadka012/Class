@@ -1,0 +1,12 @@
+internal css
+it is written using Styles tag with in the head of html 
+
+the "." is a id selector
+the "#" is a selector of id
+"!important" tag gives pripority tot the mentioned portion 
+
+eg: if both id and class specify different style then the !important is emphsized
+"*" is a universal selector
+
+the selected "margin " within the padding acts as padding for it
+

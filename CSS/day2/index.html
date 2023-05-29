@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for internal css -->
+    <!-- style tag is used within the head tag -->
+    <style>
+        *{
+            font-family: cursive;
+        }
+
+        h1{
+            color: red;
+            background-color: blue;
+            font-size: 20px;
+            margin: 0;
+        }
+            /* the "."  is the selector for class*/
+        .demo{
+            color: yellowgreen;
+            font-size: 50px;
+            background-color: aliceblue;
+        }
+        
+        /* the "#" is the selector for id */
+        #demo2{
+            color: blue;
+            background-color: grey;
+            font-size: 40px;
+        }
+
+        /* multiple Selector */
+        .demo,
+        #demo2{
+            /* font-family: 'Times New Roman', Times, serif; */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is Element Selector</h1>
+    <h1>this is also an element selector</h1>
+    <!-- this demonstrates that multiple tag with same name can be styled using same line ofcode  -->
+
+    <div class="demo">
+        this is a class selector
+    </div>
+
+    <div id="demo2">
+        this is id selector
+    </div>
+
+    <!-- combined selector -->
+    <!-- as the name suggests it selects multiple class selectors to give styke at the same time -->
+
+    <h3>its all about family </h3>
+
+
+</body>
+</html>
