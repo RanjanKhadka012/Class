@@ -1,0 +1,30 @@
+margin:
+    its the distance between two contents
+
+margin-left
+margin-right
+margin-top
+margin-bottom
+
+shorthand property
+margin: 10px(top) 2px(right) 4px(bottom) 8px(left);
+
+margin: 5px(top)     20px(rt/lt)     11ox(bottom);
+
+margin: 10px(top/bottom)   11px(rt/left);
+
+margin:auto;
+sets left right marigin to auto 
+
+border:none; removes border
+
+these should be written in the universal selector 
+margin:0;
+padding:0;
+box-sizing:border box;
+
+text-align:
+(aligns text)
+
+text-align;center;
+text-align;: justify;
