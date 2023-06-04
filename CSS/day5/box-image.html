@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image in a box</title>
+
+    <style>
+        .box{
+            width: 500px;
+            height: 300px;
+            
+            box-shadow: 50px 50px 250px black;
+            margin: 20px auto;
+            overflow: hidden;
+            transition: ease-in-out 3s;
+        }
+        /* decendent selector */
+        .box img{
+            width: 100%;
+            height: 100%;
+            transition: ease-in-out 3s;
+            /* transition is in out give effect for both zooming in and out */
+        }
+
+        /* .box:hover img{
+            transform: scale(0.5);
+        } */
+            .box:hover{
+            transform: scale(0.5);
+        }
+
+
+
+        .box2{
+            width: 500px;
+            height: 300px;
+            
+            box-shadow: 50px 50px 250px black;
+            margin: 20px auto;
+            overflow: hidden;
+            transition: ease-in-out 3s;
+        }
+        /* decendent selector */
+        .box2 img{
+            width: 100%;
+            height: 100%;
+            transition: ease-in-out 3s;
+            /* transition is in out give effect for both zooming in and out */
+        }
+
+        /* .box:hover img{
+            transform: scale(0.5);
+        } */
+            .box2:hover{
+            transform: scale(1.5) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png" alt="placeholder" > 
+    </div>
+
+    <div class="box2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png" alt="placeholder" > 
+
+    </div>
+</body>
+</html>
