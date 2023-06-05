@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Keyframe</title>
+    <link rel="shortcut icon" href="../../media/hp.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 400px;
+            height: 500px;
+            margin: 30px auto;
+            animation-name: up-down;
+            animation-duration: 5s;
+            animation-timing-function:ease-in-out ;
+            animation-iteration-count: infinite;
+            
+            /* animation-delay: 2s; */
+        }
+
+        @keyframes up-down {
+            0%{
+                transform: translateY(-150px);
+            }
+
+            25%{
+                transform: translateX(150px);
+            }
+
+            50%{
+                transform: translateY(150px);
+            }
+
+            75%{
+                transform: translateX(-150px);
+            }
+
+            100%{
+                transform: translateY(-150px);
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://img.freepik.com/premium-vector/lightning_592324-25882.jpg" alt="">
+    </div>
+    
+</body>
+</html>
