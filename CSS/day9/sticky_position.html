@@ -5,70 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sticky position</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header{
-            background-color: aqua;
-            height: 50px;
-            text-align: center;
-        }
-
-        nav{
-            background-color: goldenrod;
-            height: 50px;
-            /* text-align: center; */
-            position: sticky;
-            top: 10px;
-            
-        }
-        nav ul{
-            display: flex;
-            list-style-type: none;
-            justify-content: space-around;
-            padding: 10px;
-            
-        }
-        ul li a{
-            text-decoration: 0;
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        footer{
-            background-color: aquamarine;
-            text-align: center;
-            /* position: sticky; */
-            bottom: 0;
-            height: 40px;
-        }
-        main{
-            height: 75vh;
-            text-align: center;
-        }
-
-        button{
-            background-color: red;
-            font-size: 20px;
-            padding: 20px 30px;
-            border: none;
-            font-weight: bolder;
-            border-radius: 50px;
-            right: 10px;
-            bottom: 30px;
-            position: fixed;
-        }
-        .active{
-            color: yellowgreen;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="style.css">   
 </head>
 <body>
     <header>
@@ -79,6 +16,21 @@
         <ul>
             <li><a href="#" class="active">home</a></li>
             <li><a href="#">contact us</a></li>
+            <li><a href="#">Category</a>
+                <ul class="dropdown">
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Humanities</a></li>
+                    <li><a href="#" class="art">Arts</a>
+                        <ul class="dropdown2">
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Lalitkala</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Unemployed</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li><a href="#">about</a></li>
             <li><a href="#">services</a></li>
         </ul>
@@ -99,6 +51,10 @@
             Nobis, dignissimos sunt consequuntur quas in esse ex neque voluptate tenetur porro error facilis alias enim sint vitae suscipit similique odit iusto mollitia id accusamus? Accusamus aliquid similique unde neque.
             Quis, expedita officiis incidunt iste, id doloribus dignissimos tempora eum odit recusandae animi similique deserunt! Sit officiis, in non magnam modi obcaecati accusamus ducimus? Cumque fuga suscipit tempora fugit dignissimos.
             A alias aspernatur beatae maiores dolores ex nihil inventore? Commodi dolorum quos nam earum corporis maxime ad laudantium molestiae placeat neque dolor ducimus unde animi architecto magnam beatae
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dicta id, voluptatum non exercitationem earum quo quisquam eaque sint, molestiae minus beatae. Velit saepe dolorum voluptatem aspernatur quasi mollitia voluptatibus.
+            Quidem quod magnam explicabo ea odit modi ipsam nam. Enim, voluptates aperiam nihil molestiae repellendus deleniti possimus debitis exercitationem facilis, at quae natus. Optio quasi voluptatum et. A, id non.
+            Tempora, dolorum nobis. Perferendis repellendus quae illum ipsam, ducimus ut et repellat natus possimus ea facere rem molestias delectus rerum architecto voluptatem excepturi perspiciatis eveniet culpa unde hic. Deleniti, iusto!
         </p>
     </main>
 
