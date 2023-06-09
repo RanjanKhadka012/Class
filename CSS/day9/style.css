@@ -1,0 +1,93 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: aqua;
+            
+            text-align: center;
+        }
+
+        nav{
+            background-color: goldenrod;
+            
+            /* text-align: center; */
+            position: sticky;
+            top: 2px;
+            
+        }
+        nav>ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            padding: 10px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            display: inline-block;
+            transition: all 1s;
+        }
+
+        footer{
+            background-color: aquamarine;
+            text-align: center;
+            /* position: sticky; */
+            bottom: 0;
+            height: 40px;
+        }
+        
+
+        button{
+            background-color: red;
+            font-size: 18px;
+            padding: 20px 30px;
+            border: none;
+            font-weight: bold;
+            border-radius: 20px;
+            right: 10px;
+            bottom: 10px;
+            position: fixed;
+            
+        }
+        .active{
+            color: yellowgreen;
+        }
+        
+        a:hover{
+            color: orange;
+            background-color: aquamarine;
+        }
+        
+
+        nav ul li .dropdown{
+            width: 120px;
+            position: absolute;
+            display: none;
+            background-color: rgb(26, 149, 26);
+        }
+
+        nav ul li:hover .dropdown{
+            display: block;
+        }
+        nav ul li .dropdown .dropdown2{
+            width: 150px;
+            position: absolute;
+            display: none;
+            background-color: yellow;
+            color: black;
+            left: 100%;
+            top: 80%;
+            list-style-type: none;
+        }
+        .dropdown li:hover .dropdown2{
+            display: block;
+
+        }
+        
