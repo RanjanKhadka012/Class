@@ -1,0 +1,27 @@
+body{
+    background-color: yellow;
+}
+
+.container{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    top: 10rem;
+    left: 20em;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+}
+form{
+    display: flex;
+}
+.words{
+    text-align: center;
+    
+    justify-content: space-between;
+}
+
+select{
+    width:10em;
+}
+

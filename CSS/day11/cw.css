@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 20px auto;
+    /* border: 2px solid red; */
+    width: 30%;
+    height: 45vh;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0,0.7), -10px -10px 10px rgb(0, 0, 0,0.7);
+}
+
+.container .plan{
+    color: rgba(13, 13, 154, 0.823);
+    margin-left: 1.5em;
+}
+
+.container .cost{
+    font-size: 2em;
+    color: rgba(53, 169, 212, 0.924);
+    margin-left: 1em;
+}
+
+.monthly{
+    color: rgba(13, 13, 154, 0.823);
+    margin-left: 1.5em;
+}
+
+.box{
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.btn{
+    
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="shortcut icon" href="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1686232532/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1686232532/img/favicon.ico">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        .box_container_1{
+            height: 260px;
+            width: 300px;
+            background-color: black;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            /* opacity: 0.8; */
+            /* display: inline-flex; */
+            
+        }
+
+        .box_container_1 .box{
+            color: aliceblue;
+            
+            text-align: center;
+            padding-top: 6%;
+        }
+        .btn{
+            background-color: #16171790;
+            color: antiquewhite;
+            border: 0.1px solid snow;
+            padding: 5px;
+        }
+
+        .box_container_2{
+            height: 260px;
+            width: 300px;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            background-color: wheat;
+            /* display: none; */
+            /* display: inline-flex; */
+            
+        }
+        .box_container_2:hover{
+            display: none;
+        }
+
+        .box_container_2 .box{
+            color: rgba(24, 24, 24, 0.829);
+            
+            text-align: center;
+            padding-top: 6%;
+            padding-bottom:10px;
+            align-items: center;
+        }
+
+        #pp{
+            background-color: #51d7b8;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-left:20px;
+            
+        }
+        #pp .img{
+            width: 30%;
+        }
+
+        .img img{
+            width: 100%;
+            background: transparent;
+        }
+        .box-list{
+            margin: 0;
+            position: absolute;
+            left: 20%;
+
+        }
+
+        .box-list .btn{
+            position: absolute;
+            left: 20%;
+            margin-top: 7%;
+        }
+        
+
+        .c a{
+            margin-top:15px;
+            margin-left: 13px;
+            font-size: 24px;
+            border: 1px solid rgb(227, 224, 224);
+            border-radius: 50%;
+            align-items: center;
+            text-decoration: none;
+            padding: 7px;
+            background-color: rgb(227, 224, 224);
+            display: inline-flex;
+            transition: ease-in-out 0.3s;
+            overflow: hidden;
+            color: black;
+        }
+        @media screen and (max-width: 912px ){
+            .box_container_1{
+                    top: 25%;                
+                    left: 10%;
+            }
+            .box_container_2{
+                    top: 25%;                
+                    left: 10%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box_container_1">
+        <div class="box">
+            <i>Next Batch</i><br>
+            <ul><li>Starting from August 1<sup>st</sup></li></ul>
+        </div>
+        <div class="box">
+            <i>Courses under this program</i><br>
+            <ul>
+                <li>Mongo db</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+        <div class="box">
+            <button class="btn">Tap to learn more</button>
+            <div class="c">
+                <a href=""> <i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
+                <a href=" "><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="box_container_2">
+        <div class="box" id="pp">
+            <div class="img">
+                <img src="https://daily-dev-tips.com/ezoimgfmt/cdn.hashnode.com/res/hashnode/image/upload/v1647492266631/rH6yDfWyJ.png?ezimgfmt=rs:380x337/rscb2/ngcb2/notWebP" alt="">
+                
+            </div>
+            <div><h3>Fullstack Program</h3></div>
+        </div>
+        <div class="box">
+            MERN fullstack program with only js
+        </div>
+        <div class="box-list">
+            <ul>
+                <li>University Acreeded Certificate</li>
+                <li>Internship</li>
+                <li>Placement Guarenteed</li>
+                <button class="btn">Register now</button>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
