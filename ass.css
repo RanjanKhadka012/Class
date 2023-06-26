@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* body{
+    width: 100vw !important;
+    overflow-x: hidden;
+} */
 .container{
     height: 90vh;
     width: 100vw;
@@ -504,8 +508,8 @@
     border: 1.5px rgb(255, 248, 248) solid;
     border-radius: 50px;
     width: 113px;
-    margin-left: 56px;
-    margin-top: 0;
+    margin: 2px auto;
+    
     background-color: rgb(160, 192, 77);
     
 }
