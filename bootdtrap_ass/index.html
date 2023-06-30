@@ -10,62 +10,17 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-        .card img {
-            height: 226px;
-        }
 
-        .hardwork {
-            width: 100vw;
-            margin-top: 3rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #f0e8dd;
-
-
-
-        }
-
-        .hardwork .p1 p {
-            /* width:500px; */
-            margin-top: 30px;
-            /* font-size: 17px; */
-            letter-spacing: 1px;
-            color: rgb(103, 103, 103);
-            text-align: right;
-        }
-
-        .hardwork .hardw1 {
-            margin-left: 35px;
-            margin-top: 16px;
-        }
-
-        .hardw1 .pa {
-            font-size: 20px;
-            color: rgb(160, 192, 77);
-        }
-
-        .hardw1 .pb {
-            font-size: 30px;
-            /* margin-left: 285px; */
-            margin-top: 5px;
-            margin-left: -1px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            letter-spacing: 2px;
-        }
-
-        .section_cards {
-            background-color: #f0e8dd;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../media/x.svg" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
-<body class="bg-dark">
+<body>
     <header>
         <!-- place navbar here -->
-        <nav class="navbar navbar-expand-lg navbar-expand-md text-white bg-dark  ">
+        <nav class="navbar navbar-expand-lg navbar-expand-md  ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../media/x.svg" alt="" height="20px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -73,31 +28,29 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Collections</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Cart
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">View Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Check Out</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Show Offers</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
+
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -109,16 +62,13 @@
     </header>
     <main>
         <!-- carousel -->
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-interval="2000" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="https://media.gucci.com/content/StoreDetailStandard_970x400/1582279203/StoreDetailStandard_BH-store-02_001_Default.jpg"
                         class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="https://www.americanamanhasset.com/media/images/DanielSalemi_Gucci_DFS4611.2e16d0ba.fill-1200x600.jpg"
-                        class="d-block w-100" height="595px" alt="...">
-                </div>
+
                 <div class="carousel-item">
                     <img src="https://media.gucci.com/content/StoreDetailStandard_970x400/1600434905/StoreDetailStandard_SanJose-store-002_001_Default.jpg"
                         class="d-block w-100" alt="...">
@@ -137,24 +87,21 @@
         </div>
 
         <!-- New Arrivals -->
-        <div class="container-fluid m mb-0">
-            <div class="hardwork">
-                <div class="p1">
-                    <p> Fifth Ave, granny house with vanilla wafers. This the remedy, <br> the seperation. 2Pac of my
-                        generation.
-                    </p>
-                </div>
-                <div class="hardw1">
-                    <div class="pa">Our Hardwork</div>
-                    <div class="pb">Our Features</div>
-                </div>
-            </div>
-        </div>
 
 
         <!-- Cards -->
         <section class="section_cards">
-            <div class="container d-flex justify-content-around pt-5 mt-0">
+            <div class="top d-flex justify-content-center  pt-4">
+                <div class="p text-center mt-auto mb-auto w-50 p-4">
+                    we have handicked our finest and most renowned collection from the corners of the world to Nepal.
+                </div>
+                <div class="word text-left  w-25">
+                    <h1 class="text-success">New Arrivals</h1>
+                    <h2 class="text-success-emphasis">European Collection</h2>
+                </div>
+            </div>
+
+            <div class="container d-flex justify-content-around pt-5 pb-5 mt-0">
                 <div class="card" style="width: 18rem;">
                     <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto/in-resources/6ff2919b-8254-4153-83d9-376e98b3c072/Images/ProductImages/Source/levis-gold-tab-mens-t-shirt-A37570018_01_Front.jpg"
                         class="card-img-top" alt="...">
@@ -164,8 +111,8 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -177,11 +124,11 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem ;">
                     <img src="https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0053_5c650849-9d9d-4cc3-8863-6a23778cd9a0.jpg?v=1675170808"
                         class="card-img-top" alt="...">
                     <ul class="list-group list-group-flush">
@@ -190,12 +137,12 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
                     </div>
                 </div>
             </div>
-            <div class="container d-flex justify-content-around mt-5">
+            <div class="container d-flex justify-content-around mb-5 mt-5 ">
                 <div class="card" style="width: 18rem;">
                     <img src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2"
                         class="card-img-top" alt="...">
@@ -205,8 +152,8 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -218,8 +165,8 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -231,8 +178,52 @@
                         <li class="list-group-item">A third item</li>
                     </ul>
                     <div class="card-body">
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Buy Now</a>
+                        <a href="#" class="card-link">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- customer base -->
+        <section>
+            <div class="container-fluid d-flex flex-wrap pt-5 justify-content-center bg-dark">
+                <div class="box w-25">
+                    <div class="img">
+                        <img src="https://www.stitchfix.com/women/blog/wp-content/uploads/21-11-05_W_OF_V09_1649_2x3-scaled.jpeg"
+                            alt="Women's clothing">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-left bg-dark text-white">Women's</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="box w-25">
+                    <div class="img">
+                        <img src="https://www.fashionhombre.com/wp-content/uploads/2019/11/Dashing-Formal-Outfit-Ideas-For-Men-5.jpg"
+                            alt="">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-white bg-dark text-center">Men's clothing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box w-25">
+                    <div class="img">
+                        <img src="https://www.pinkblueindia.com/blog/wp-content/uploads/2016/02/Newborn-Baby-Formal-Suit.jpg"
+                            alt="">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-dark text-white text-center">Children Clothing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box w-25">
+                    <div class="img">
+                        <img src="https://wwd.com/wp-content/uploads/2021/04/Gucci-RTW-Fall21-001.jpg" alt="">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-white bg-dark text-center">Pride Special</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -241,9 +232,22 @@
 
 
 
+
     </main>
     <footer>
         <!-- place footer here -->
+        <footer>
+            <div class="container-fluid">
+                <div class="contact">
+                    <div class="contact_with_us">
+                        Connect With Us
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook fa-beat-fade"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.box img {
+            height: 226px;
+            object-fit: contain;
+            background-blend-mode: color-burn;
+}
+.card-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+.card{
+    border: none;
+    box-shadow: 15px 15px 20px , -15px  -15px 20px;
+}
+
+.card img {
+            height: 226px;
+            object-fit: contain;
+            background-blend-mode: color-burn;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    color: blanchedalmond;  
+}
+.section_cards{
+    transition: ease-in-out  ;
+}
+.card:hover{
+    transform: translateY(-1.5rem) ;
+}

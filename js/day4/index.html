@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let a = Number(prompt("enter Number"))
+        // if (a % 2 == 0) {
+        //     document.write(`${a} is even`)
+        // }
+        // else {
+        //     document.write(`${a} is odd`)
+        // }
+        // document.write("<br />")
+
+        //    to check positive or negative
+        // if (a < 0) {
+        //     document.write(`${a} is negative`)
+        // }
+
+        // else if (a == 0) {
+        //     document.write(`${a} is 0`)
+        // }
+        // else {
+        //     document.write(`${a} is positive`)
+        // }
+
+        let a = parseInt(prompt("Enter First Number"))
+        let b = parseInt(prompt("Enter Second Number"))
+        let c = parseInt(prompt("Enter Third Number"))
+        document.write(`${a} ${b} ${c} <br />`)
+
+        if (a > b && a > c) {
+            document.write(`${a} is the greatest`)
+        }
+        else if (b > a && b > c) {
+            document.write(`${b} is the greatest`)
+        }
+        else {
+            document.write(`${c} is the greatest`)
+        }
+    </script>
+</body>
+
+</html>
