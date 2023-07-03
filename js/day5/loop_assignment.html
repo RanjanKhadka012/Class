@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const z = '&nbsp'
+        let rows = parseInt(prompt('specify the number of rows'));
+        for (i = 1; i <= rows; i++) {
+            for (k = 1; k <= (rows - i); k++) {
+                document.write(z)
+            }
+            for (j = 1; j <= i; j++) {
+                document.write(``)
+                document.write(`*`)
+            }
+            document.write('<br />')
+        }
+    </script>
+</body>
+
+</html>

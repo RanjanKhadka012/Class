@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for loop 
+        // while, do while
+        // for in , for of, for of
+
+        // for (i = 15; i >= 1; i--) {
+        //     document.write(`${i}<br/>`)
+        // }
+
+        // let z = parseInt(prompt("enter the limit"))
+        // for (n = 1; n <= z; n++) {
+        //     for (i = 1; i <= 10; i++) {
+        //         document.write(` ${n} x ${i} is ${n * i} <br />`)
+        //     }
+        //     document.write('<hr>')
+        // }
+
+        // for (i = 1; i <= 5; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         document.write(`*`)
+        //     }
+        //     document.write('<br />')
+        // }
+
+        function createPyramid(rows) {
+            var pyramidContainer = document.getElementById("pyramidContainer");
+            pyramidContainer.innerHTML = "";
+
+            for (var i = 0; i < rows; i++) {
+                var row = "";
+
+                for (var j = 0; j < rows - i - 1; j++) {
+                    row += "&nbsp;";
+                }
+
+                for (var k = 0; k < 2 * i + 1; k++) {
+                    row += "*";
+                }
+
+                row += "<br>";
+                pyramidContainer.innerHTML += row;
+            }
+        }
+
+        var rows = parseInt(prompt("Enter the number of rows for the pyramid:"));
+        createPyramid(rows);
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
