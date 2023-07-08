@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body>
+    <input type="password" id="pwd" onkeyup="demofuntion()">
+    <br>
+    <p class="result">
+
+    </p>
+
+
+    <script>
+        const demofuntion = () => {
+            const inputValue = document.getElementById('pwd').value
+            document.querySelector('.result').innerHTML = inputValue
+        }
+    </script>
+</body>
+
+</html>

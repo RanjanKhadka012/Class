@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body>
+    <!--AN event is a signal yhat somethihg has happened
+    'on click' when the mouse click on an html element or tap on touchscreen 
+
+    "ondblclick "  doublw clicjs in an html element
+    "context menu " when yhe mpuse right clicks
+    "mosuseover/mouseout" when the curser comesover or leaves an element
+    mousedown/miuseup  when the mouse nuttom is pressed ot released over an element 
+    mousemove  when a mouse is moved over an html element 
+    onkeyup -- when a key os pressed
+    onkeudown--same as in key up but it shows first keypress result only after the second key is pressd
+
+    onsubmit-- when form is submitted
+    onfocus -- when the visistor focuses on an element , normally used in input
+    onload -- when a pge is loaded
+
+-->
+    <button onclick="demo()">click to see the result</button>
+    <h3 id="red"></h3>
+    <img src="../../media/a.png" alt="">
+
+    <button ondblclick="change()"> double clicl</button>
+
+
+
+
+    <script>
+        function demo() {
+            // document.write(new Date)
+            document.getElementById("red").innerHTML = new Date()
+
+        }
+
+        function change() {
+            document.querySelector('img').src = "https://news.northwestern.edu/assets/Stories/2023/03/rainbow1940__FocusFillWzEyMDAsNjMwLCJ5Iiw4N10.jpg"
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple interest</title>
+</head>
+
+<body>
+    <script>
+        let Principal = parseInt(prompt("What is the principle amount"))
+        let rateOfInterest = parseInt(prompt("Rate of interest in % per annum"))
+        let Time = parseInt(prompt("Give time in years"))
+
+        const simpleInterest = (p, r, t) => {
+            return ((p * t * r) / 100)
+        }
+
+        a = simpleInterest(Principal, rateOfInterest, Time)
+        document.write(`the simple interest is ${a} <br />`)
+        document.write(`the total due amount is ${a + Principal}`)
+    </script>
+</body>
+
+</html>

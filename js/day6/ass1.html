@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest number</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter First Number"))
+        let b = parseInt(prompt("Enter Second Number"))
+        let c = parseInt(prompt("Enter Third Number"))
+
+        const greatNumber = (a, b, c) => {
+            if (a > b && a > c) {
+                document.write(`${a} is the greatest`)
+            }
+            else if (b > a && b > c) {
+                document.write(`${b} is the greatest`)
+            }
+            else {
+                document.write(`${c} is the greatest`)
+            }
+        }
+
+        greatNumber(a, b, c)
+    </script>
+</body>
+
+</html>
