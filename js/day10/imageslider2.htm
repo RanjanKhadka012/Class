@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 500px;
+            margin: auto;
+            position: relative;
+        }
+
+        .container img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            position: absolute;
+            font-size: 1.5rem;
+            background-color: rgba(231, 249, 197, 0.296);
+            border: none;
+            color: white;
+            font-weight: 900;
+        }
+
+        #left {
+            top: 35%;
+            left: 0;
+        }
+
+        #right {
+            top: 35%;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <img src="./../../media/IMG_0090.jpg" alt="sliderimage">
+        <button class="btn" id="left" onclick="prev()">&lt;</button>
+        <button class="btn" id="right" onclick="Next()">&gt;</button>
+    </section>
+
+
+    <script>
+        images = ["https://cdn.britannica.com/98/214598-050-9879F2FA/giant-sequoia-tree-Sequoia-National-Park-California.jpg", "./../../media/IMG_0090.jpg"]
+
+        const Next = () => {
+            let n = 0
+            let b = images.length()
+            if (n < b) {
+                document.querySelector("img").src = images[n + 1]
+            }
+            else {
+                document.querySelector("img").src = images[n]
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

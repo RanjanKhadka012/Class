@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        // <!-- array is a collection of multiple values
+        //  the vakues inside array are called elements -->
+        const fruits = ["mango", "apple", "banana", "orange", "cherry"]
+        document.write(fruits)
+        document.write("<br>")
+
+        document.write(fruits[0][3])
+        document.write("<br>")
+
+        document.write(`${fruits.length} <br>`)
+        document.write(`${fruits[2].length} <br>`)
+
+        // to remove last element of array ise pop
+        fruits.pop()
+        document.write(`${fruits} <br>`)
+
+        //to add element, use .push()
+        fruits.push("watermelon")
+        document.write(`${fruits} <br>`)
+
+        //shift() to remove forst element
+        fruits.shift()
+        document.write(`${fruits} <br>`)
+
+        // to add first element
+        fruits.unshift("litchee")
+        document.write(`${fruits} <br>`)
+
+        //.splice() to remove or add one or more elements at specific positions.
+
+        fruits.splice(2, 0, "cherry", "guava")
+        document.write(`${fruits} <br>`)
+        // 0 shows number of element removed and 2 shows the indent
+
+        // sort() to arrange in ascending order
+
+        fruits.sort()
+        document.write(`${fruits} <br>`)
+
+        // reverse()  to reverse the array
+        fruits.reverse()
+        document.write(`${fruits} <br>`)
+
+
+
+    </script>
+</body>
+
+</html>
