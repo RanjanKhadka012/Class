@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // reduce -> thid method runs a function in every element of array and reduce the single result and it works from left to right
+        const Numbers = [10, 15, 20, 25, 30, 35, 40, 45, 50, 100]
+        const total = Numbers.reduce((accumulator, cv) => accumulator + cv, 0) //0 is the initial accumulator value
+        document.write(total)
+        document.write('<br />')
+
+        const max = Numbers.reduce((a, b) => Math.max(a, b))
+        a = parseInt(Numbers.length)
+        const mean = (Numbers.reduce((accumulator, cv) => (accumulator + cv))) / a
+
+        document.write(`mean is ${mean} <br />`)
+
+        b = Numbers.reduce((a, b) => Math.aver)
+    </script>
+</body>
+
+</html>

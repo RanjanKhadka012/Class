@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAllback function</title>
+</head>
+
+<body>
+
+    <div class="div">
+
+    </div>
+    <script>
+        const news = [
+            {
+                Title: 'first title',
+                content: 'Content of first news'
+            },
+            {
+                Title: 'Second title',
+                content: 'Content of second news'
+
+            },
+            {
+                Title: 'third title',
+                content: 'Content of third news'
+            }
+        ]
+
+        const showNews = () => {
+            setTimeout(() => {
+                result = ''
+                news.forEach((post) => {
+                    result += `
+                    <li>
+                        <h2>${post.Title}</h2>
+                        </li>
+                        <p>
+                            ${post.content}
+                            </p>
+                    `
+                })
+                document.querySelector('div').innerHTML = result
+
+            }, 3000);
+        }
+
+
+
+        // call the function showNews
+
+        // showNews()
+
+        // define add news
+        // const addNews = (newdata) => {
+        //     setTimeout(() => {
+        //         news.push(newdata)
+        //     }, 1000);
+        // }
+
+
+        // addNews({
+        //     Title: 'forth title',
+        //     content: 'Content of first news'
+        // })
+
+        // showNews()
+
+        // define addNews function with callback
+        const addNews = (newdata, callback) => {
+            setTimeout(() => {
+                news.push(newdata)
+            }, 2000);
+            // call the callback function
+            callback()
+        }
+
+        // call addNews with callback
+        addNews({
+            Title: 'forth title',
+            content: 'Content of first news'
+        }, showNews)
+    </script>
+</body>
+
+</html>

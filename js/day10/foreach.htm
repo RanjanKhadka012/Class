@@ -11,10 +11,13 @@
     <script>
         const number = [2, 20, 30, 40, 100]
         result = " "
-        number.forEach(demoFunction)
-        function demoFunction(num) {
+        // number.forEach(demoFunction)
+        // function demoFunction(num) {
+        //     result += `<li>${num}</li>`
+        // }
+        number.forEach((num) => {
             result += `<li>${num}</li>`
-        }
+        })
 
         document.write(result)
     </script>

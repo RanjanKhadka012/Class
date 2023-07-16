@@ -385,3 +385,14 @@ body{
   letter-spacing: 0.33em;
   z-index: 3;
 }
+
+.footer{
+  background-color: royalblue;
+  margin-top: 2rem;
+  height: 14rem;
+  color: aliceblue;
+}
+.contact_with_us{
+  font-weight: 900;
+  font-size: 1.5rem;
+}

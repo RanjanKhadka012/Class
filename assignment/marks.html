@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="marks.css">
+</head>
+
+<body>
+    <form class="form">
+        <p class="title">Marks </p>
+        <p class="message">Enter your marks and get the grade</p>
+        <div class="flex">
+            <label>
+                <input required="" autocomplete="off" type="text" id="F_name" class="input">
+                <span>Firstname</span>
+            </label>
+
+            <label>
+                <input required="" autocomplete="off" type="text" id="L_name" class="input">
+                <span>Lastname</span>
+            </label>
+        </div>
+
+        <label>
+            <input required="" autocomplete="off" type="text" id="Maths" class="input" value="">
+            <span>Maths</span>
+        </label>
+
+        <label>
+            <input required="" autocomplete="off" type="text" class="input" id="Science" value="">
+            <span>Science</span>
+        </label>
+        <label>
+            <input required="" autocomplete="off" type="text" id="English" class="input" value="">
+            <span>English</span>
+        </label>
+
+    </form>
+    <div class="value">
+        <button class="Enter" onclick="clicked()">Calculate</button>
+        <button type="reset" onclick="Reset()" value="Reset" class="Reset">Reset</button>
+        <div class="signin">
+            <h3 class="name"></h3>
+            <h2 class="grade"></h2>
+            <h2 class="marks"></h2>
+            <h2 class="percent"></h2>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="marks.js"> </script>
+</body>
+
+</html>

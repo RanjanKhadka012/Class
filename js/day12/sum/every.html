@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num = [5, 10, 3, 7, 8]
+        // every 
+
+        const result = num.every((n) => {
+            return n < 0
+        })
+
+        document.write(result)
+        document.write('<br />')
+
+        //some returns true if one element is true
+        const result1 = num.some((n) => {
+            return n > 0
+        })
+        document.write(result1)
+
+
+        const string = ['apple', 'banana', 'mango', 'litchi', 'strawberry', 'kiwi']
+        const resu = string.some((str) => {
+            return str.length > 4
+        })
+        document.write(resu)
+
+    </script>
+</body>
+
+</html>

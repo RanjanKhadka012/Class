@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // JSON => Javascript Opbject Notation
+        let Student = {
+            'F_name': "Ranjan",
+            'L_name': "Khadka",
+            'age': 21,
+            subject: ["html", 'css', 'js', 'react']
+
+        }
+
+        const json_to_string = JSON.stringify(Student)
+        localStorage.setItem('std', json_to_string)
+
+
+        // sessionStorage 
+        // set to session storage
+        sessionStorage.setItem('std', json_to_string)
+
+        const stdresult = localStorage.getItem('std')
+        console.log(stdresult)
+
+        const string_to_json = JSON.parse(stdresult)
+        console.log(string_to_json.subject)
+
+
+    </script>
+</body>
+
+</html>
