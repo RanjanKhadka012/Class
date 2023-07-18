@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function Ranjan() {
+            let harion_weather = new Promise((resolve, error) => {
+                setTimeout(() => {
+                    resolve("harion ko temperature")
+                }, 2000);
+            })
+
+            let Kathmandu_weather = new Promise((resolve, error) => {
+                setTimeout(() => {
+                    resolve("Kathmandu ko temperature")
+                }, 3000);
+            })
+
+            // harion_weather.then(alert)
+            // Kathmandu_weather.then(alert)
+            let harionw = await harion_weather
+            let kathmanduw = await Kathmandu_weather
+            return [harionw, kathmanduw]
+        }
+        console.log("welcome to weather control room")
+        let a = Ranjan()
+        console.log(a)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async_Await</title>
+</head>
+
+<body>
+    <div class="div"></div>
+    <script>
+        const news = [
+            {
+                Title: 'first title',
+                content: 'Content of first news'
+            },
+            {
+                Title: 'Second title',
+                content: 'Content of second news'
+
+            },
+            {
+                Title: 'third title',
+                content: 'Content of third news'
+            }
+        ]
+
+        const showNews = () => {
+            setTimeout(() => {
+                result = ''
+                news.forEach((post) => {
+                    result += `
+                        <li>
+                            <h2>${post.Title}</h2>
+                            </li>
+                            <p>
+                                ${post.content}
+                                </p>
+                        `
+                })
+                document.querySelector('div').innerHTML = result
+
+            }, 3000);
+        }
+
+        // define the function addNews with promise
+        const addNews = (data) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    news.push(data)
+                    const error = false
+                    if (!error) {
+                        resolve()
+                    } else {
+                        reject("something went wrong")
+                    }
+                }, 3000);
+            })
+        }
+        // default method
+        // async function demoFunction() {
+        //     await addNews({
+        //         Title: 'forth title',
+        //         content: 'Content of first news'
+        //     })
+        //     showNews()
+        // }
+        // demoFunction()
+
+
+        // arrow method
+        const demoFunction = async () => {
+            await addNews({
+                Title: 'forth title',
+                content: 'Content of first news'
+            })
+            showNews()
+        }
+        demoFunction()
+
+
+        // call addNews with promise
+        // addNews({
+        //     Title: 'forth title',
+        //     content: 'Content of first news'
+        // }).then(showNews).catch((err) => console.log(err))
+    </script>
+</body>
+
+</html>

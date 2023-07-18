@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise all</title>
+</head>
+
+<body>
+    <script>
+        const API_1 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('result from API 1')
+                }, 2000);
+            })
+        }
+
+        const API_2 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    reject('result from API 2')
+                }, 1000);
+            })
+        }
+
+        const API_3 = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve('result from API 3')
+                }, 1500);
+            })
+        }
+
+        Promise.any([API_1(), API_2(), API_3()]).then(res => {
+            console.log("result from the APIs :", res)
+        }).catch(err => {
+            console.log("error in fetching data", err)
+        })
+
+    </script>
+</body>
+
+</html>
