@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5">
+                <form action="" class="shadow-lg p-4" onsubmit="return validForm()">
+                    <h2 class="text-center text-muted">Register Form</h2>
+                    <div class="mb-2">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" name="fname" id="fname" class="form-control" onkeyup="fnameValidation()">
+                        <span id="fnameMsg"></span>
+
+                    </div>
+                    <!-- last name -->
+                    <div class="mb-2">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" name="lname" id="lname" class="form-control" onkeyup="lnameValidation()">
+                        <span id="lnameMsg"></span>
+
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-2">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="text" name="Email" id="Email" class="form-control" onkeyup="emailValidation() "
+                            autocomplete="off">
+                        <span id="EmailMsg"></span>
+
+                    </div>
+                    <!-- password -->
+                    <div class="mb-2">
+                        <label for="Password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="Fname" id="password"
+                            onkeyup="passwordValidation()">
+                        <span id="passwordMsg"></span>
+
+                    </div>
+
+                    <!-- Password confirmation -->
+                    <div class="mb-2">
+                        <label for="cpsw" class="form-label">Confirm Password</label>
+                        <input type="password" name="cpsw" id="cpsw" class="form-control"
+                            onkeyup="cpasswordValidation()">
+                        <span id="cpasswordMsg"></span>
+
+                    </div>
+                    <div class="mb-2">
+                        <input type="button" value="Register" class="btn btn-primary" onclick="validform()">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="form_validation.js"></script>
+</body>
+
+</html>

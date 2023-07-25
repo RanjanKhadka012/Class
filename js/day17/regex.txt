@@ -1,0 +1,25 @@
+REGULAR esxpression 
+-> it is used to check data format like strings ,numbers etc
+
+syntax and content used in regex
+/...../ -> regular expression are written between these signs 
+
+"^" (cap) it checks from start
+$ it checks from last 
+[a-z] -> it matches lower case alphabet
+[A-Z] => matches uppercase alphabets
+[0-9] -> matches nueric values/digits
+[a-zA-Z] -> it matches all alphabets only 
+[a-z0-9] -> matches alphanumeric characters 
+
+for special characters use '\' sign 
+eg: \@,\., \@ , \s(space) , \* but never use \% in password
+
+{minlength, maxlength} -> {3,20}
+?= -> it means the poition of any character doesnt matter but it should be present 
+. -> matches single character
+* -> matches none or more occurance character
++ -> matches one or more occurance
+? -> matches zero or one occurance
+
+/^([a-z])+$/
